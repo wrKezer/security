@@ -1,7 +1,4 @@
-
-**Hello everyone. This list is spesifically made for the War Room members. However as this list is public everyone is free to use and comment.**
-
-This list can be used to ensure security of any computer. But I will be focussed on security about metamask. 
+**This list can be used to ensure security of any computer. But I will be focussed on security about metamask. **
 
 The first part will be the extreme case. It is not that hard but it requires a bit more work and it might not be for everyone.
 
