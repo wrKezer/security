@@ -90,7 +90,7 @@ reboot
 bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew analytics off
 
-rbew install taskexplorer
+brew install taskexplorer
 brew install knockknock
 brew install little-snitch
 brew install oversight
