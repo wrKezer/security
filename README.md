@@ -177,7 +177,7 @@ network.prefetch-next: FALSE
 
 - **General Tips**
 ```
-- Using Simplelogin to hime my real email addres.
+- Using Simplelogin to hide my real email addres.
 - Using signal for communication.
 - Protonmail is the main mail service.
 - Using strongbox app on the phone to see keepassxc database (copying it with cable, not online) and block its connection to internet.
