@@ -1,25 +1,30 @@
-**This list can be used to ensure security of any computer. But I will be focussed on security about metamask.**
+**the War Room Security Audit**
 
-The first part will be the extreme case. It is not that hard but it requires a bit more work and it might not be for everyone.
+##### [Extreme Measure](#extreme-measures) : Separating everything with already hardened laptops. You can DIY your own laptop like that, but needs tons of time. 
 
-The general part will be for everyone, and also can be seen the 2nd step after the Extreme Measures.
+##### [General Usage Tips](#general-part) : General usage suggestions which can be applied to all computer and operating systems. BUT I will not suggest using Windows. Linux > MacOS > Windows. If you have to use windows, consider using VM or dual boot.
+
+##### [Settings](#setings) : Settings for freshly installed Ubuntu, Macos and firefox.
+
+##### [Home network](#my-home-setup) : My personal suggestions and usage for home network.
+
 
 ---
 ### Extreme measures
 
-Easiest way to be secure is not to be any target. In our everyday computer usage, we do enter tons of websites, we do install tons of apps, so with every click we do, we incease the possibility of being a target. If we click on any phising link, or any decoy website, everything is already done.
+Easiest way to be secure is not to be any target. For everyday computer usage, we visit tons of websites, we install tons of apps, so with every click we do, we incease the possibility of being a target. If we click on any phising link, or any decoy website, everything is already done.
 
-So the ultimate solution will be a separate computer for trading.
+So the ultimate solution will be a separate computer for trading or banking stuff.
 
 Here is my list for that:
-- Buying [insurgo](https://insurgo.ca/), or [System 76 Lemmur](https://system76.com/laptops/lemur) laptop.
-- If you dont want to buy something like that, you can just gather a laptop that you can disable intel ME. 
-- Install Qubes OS, if it is a little hard for you, Ubuntu is also great alternative, but mainly I can only suggest Linux. I will talk about MacOS in the next chapter.
+- Buying [insurgo](https://insurgo.ca/), or [System 76 Lemur](https://system76.com/laptops/lemur) laptop.
+- If you dont want to buy something like that, you can just gather a laptop that you can disable intel ME. (Lenovo x230 is the best bet) with min 16GB or RAM.
+- Install Qubes OS, if it is a little hard for you, Ubuntu is also great alternative.
 - Create couple of Qubes, personal, trade, vault:
 - These can be seen as different operating systems on your computer which cannot connect each other.
-- On trade Qube, you will ony install firefox, and metamask. Mic and Cam will be disconnected, it will have a connection to internet.
+- On trade Qube, you will ony install firefox, and metamask. Mic and Cam will be disconnected, it will have a connection to internet. This can go through VPN + Tor network. Or if you do not want to deal with Catcha stuff, it can be Tor + VPN.
 - Vault will be an offline Qube, it will not connect to internet in any way. It will have Keepassxc in it, so that you can store your password or keys for any kind. As it is always offline, you will not need to worry.
-- The personal one is for your daily needs.
+- The personal one is for your daily needs, it is better to use internet with it via VPN as well.
 
 ---
 ### General Part
@@ -27,35 +32,39 @@ Here is my list for that:
 This is for everyone. it is about general computer use to be safe, and a lot of info can be applied to Metamask usage.
 
 - Disable bluetooth when you dont use it.
+- Disable Wifi when you dont use it.
 - Use BIOS password.
-- Enable HDD encryption
-- Do not click on any link you see on the internet, you can never be sure if the other persons is compromised.
-- Use 2fa password, maybe ubikey for you password. So that even if your password is stolen, they cannot get into the account
-- Using firefox is the best bet, I will share some settings that I use in the 3rd part.
+- Enable HDD encryption.
+- Do not click on any link you see on the internet, you can never be sure if the other person is compromised.
+- Use 2fa password, maybe ubikey for you password. So that even if your password is stolen, they cannot get into the account. A
+- Using firefox is the best bet, I will share some settings that I use in the [Settings](#setings) part.
 - Use this firefox only for trading, nothing else. So that even when something wrong happens you wont be on your main browser.
-- Always use hardware wallet. This is of course not the safest, but paper wallets are harder to withdraw.
+- Always use hardware wallet. This is of course not the safest, but paper wallets are harder to withdraw. 
 - Only send what you need to your hot wallet, always assume it can always be hacked, so do not have more than you can loose on your hot wallet.
-- Use secure mail providers like [protonmail](https://protonmail.com/)
-- Your daily and trading browser should be different and do not install any unnecessary extensions
+- Use secure mail providers like [Protonmail](https://protonmail.com/).
+- Your daily and trading browser should be different and do not install any unnecessary extensions.
 - 99% of the hacks happen because of user error, do not forget that.
-- Never ever store your seed phrases backup codes online, or even on your computer. Only write them on paper.
-- If you have to write them on the computer, then transfer your funds to new wallet.
+- Never ever store your seed phrases backup codes online, or even on your computer. Only write them on paper, and store it accordingly.
+- If you have to write them on the computer, then transfer your funds to new wallet, and ditch the old one.
 
 ---
 ### Setings:
 
 #### When you install Ubuntu, which is the easiest of Linux Distros, I do use these commands:
 ```
+# Update and some cleaning
 sudo apt purge -y apport
 sudo apt remove -y popularity-contest
 sudo apt autoremove -y
 
+# Installing bleachbit and Keepassxc
 sudo apt update
 sudo apt install bleachbit
 sudo snap install keepassxc
 sudo apt update
 sudo apt upgrade
 
+# Installing ProtonVPN
 cd Downloads
 wget https://protonvpn.com/download/protonvpn-stable-release_1.0.0-1_all.deb
 
@@ -71,9 +80,11 @@ sudo apt-get install protonvpn -y
 sudo apt install gnome-shell-extension-appindicator gir1.2-appindicator3-0.1 -y
 reboot
 
+# Visual settings
 settings set org.gnome.desktop.background picture-uri ''
 gsettings set org.gnome.desktop.background primary-color 'rgb(66, 81, 100)'
 
+# Installing Virtualbox
 sudo apt update
 sudo apt install virtualbox virtualbox-ext-pack -y
 sudo apt update
@@ -84,7 +95,7 @@ reboot
 
 #### For MacOS
 ```
-bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew analytics off
 
 brew install taskexplorer
@@ -92,7 +103,7 @@ brew install knockknock
 brew install little-snitch
 brew install oversight
 brew install onyx
-brew install virtualbox //For newer M1 Macbooks, parallels.
+brew install virtualbox //For newer M1 Macbooks, brew install --cask parallels
 brew install carbon-copy-cloner
 brew update
 brew upgrade
@@ -117,7 +128,7 @@ Block permissions for location, camera, microphone and notifications
 Disable Firefox Data Collection and Usa
 Enable HTTPS-Only Mode in all windows.
 ```
-Then open about:config, say yes
+Then open about:config
 ```
 geo.enabled: FALSE
 browser.safebrowsing.malware.enabled: FALSE
@@ -144,7 +155,12 @@ network.prefetch-next: FALSE
 ---
 #### My home setup
 
-- **Insurgo laptop**
+- **Insurgo laptop with Qubes OS**
+```
+- Trading: Has only firefox installed with metamask. All important links are already bookmarked. Goes through Tor + VPN (dedicated ip) so that I dont always see captcha errors.
+- Vault: All my licenses, passwords and everything is stored here, no internet connection. Even if this is compromised, there is no problem as I use 2fa for all of the important accounts.
+- Personal: For general usage. It has firefox, signal, Veracrypt. Connects to internet via VPN.
+```
 
 - **M1 Macbook** laptop with Ubuntu install as VM, all trading is inside of that VM
 ```
@@ -160,7 +176,7 @@ network.prefetch-next: FALSE
 - **Protectli pfSense Router**
 ```
 - Whole network goes throuh it
-- ProtonVPN is always one, if it gets disconnected, cannot connect to internet.
+- ProtonVPN is always one, if it gets disconnected, cannot connect to internet. It connects to closest server, so almost no speed loss.
 - Cloudflare DNS is enabled within
 - Using service_watchdog Package to be sure that VPN is always working, if there is a problem, this will restart it.
 ```
@@ -184,4 +200,5 @@ network.prefetch-next: FALSE
 
 ---
 
-This will be updated.
+This guide is still in the making.
+You can reach me via wrkezer@pm.me
