@@ -1,4 +1,4 @@
-**the War Room Security Audit**
+**the Security Audit**
 
 ##### [Extreme Measure](#extreme-measures) : Separating everything with already hardened laptops. You can DIY your own laptop like that, but needs tons of time. 
 
@@ -16,8 +16,8 @@ Easiest way to be secure is not to be any target. For everyday computer usage, w
 
 So the ultimate solution will be a separate computer for trading or banking stuff.
 
-Here is my list for that:
-- Buying [insurgo](https://insurgo.ca/), or [System 76 Lemur](https://system76.com/laptops/lemur) laptop.
+Here is the list for that:
+- Buy [insurgo](https://insurgo.ca/), or [System 76 Lemur](https://system76.com/laptops/lemur) laptop.
 - If you dont want to buy something like that, you can just gather a laptop that you can disable intel ME. (Lenovo x230 is the best bet) with min 16GB or RAM.
 - Install Qubes OS, if it is a little hard for you, Ubuntu is also great alternative.
 - Create couple of Qubes, personal, trade, vault:
@@ -36,7 +36,7 @@ This is for everyone. it is about general computer use to be safe, and a lot of 
 - Use BIOS password.
 - Enable HDD encryption.
 - Do not click on any link you see on the internet, you can never be sure if the other person is compromised.
-- Use 2fa password, maybe ubikey for you password. So that even if your password is stolen, they cannot get into the account. A
+- Use 2FA. Preferably hardware one like Yubikey. It is easier to use, faster, more secure. Just do not forget to have a spare one.
 - Using firefox is the best bet, I will share some settings that I use in the [Settings](#setings) part.
 - Use this firefox only for trading, nothing else. So that even when something wrong happens you wont be on your main browser.
 - Always use hardware wallet. This is of course not the safest, but paper wallets are harder to withdraw. 
