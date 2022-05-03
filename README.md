@@ -1,8 +1,8 @@
 **the Security Audit**
 
-##### [Extreme Measure](#extreme-measures) : Separating everything with already hardened laptops. You can DIY your own laptop like that, but needs tons of time. 
+##### [Extreme Measure](#extreme-measures) : Separating everything with already hardened laptops. You can DIY your own laptop like that, but needs tons of time and research so if you like these stuff it is always good to know, but not recommended for non tech people. 
 
-##### [General Usage Tips](#general-part) : General usage suggestions which can be applied to all computer and operating systems. BUT I will not suggest using Windows. Linux > MacOS > Windows. If you have to use windows, consider using VM or dual boot.
+##### [General Usage Tips](#general-part) : General usage suggestions which can be applied to all computers and operating systems. BUT I will not suggest using Windows. Linux > MacOS > Windows. If you have to use windows, consider using VM or dual boot for your important needs.
 
 ##### [Settings](#setings) : Settings for freshly installed Ubuntu, Macos and firefox.
 
@@ -12,14 +12,16 @@
 ---
 ### Extreme measures
 
-Easiest way to be secure is not to be any target. For everyday computer usage, we visit tons of websites, we install tons of apps, so with every click we do, we incease the possibility of being a target. If we click on any phising link, or any decoy website, everything is already done.
+Easiest way to be secure is not to be at any target. 
 
-So the ultimate solution will be a separate computer for trading or banking stuff.
+For everyday computer usage, people visit tons of websites, install tons of apps and with every click, we always incease the possibility of being target. If you click on any phising link, or any decoy website, everything is already done, all of these security measures are useless.
+
+So the ultimate solution will be a separate computer for trading or banking stuff and not using that computer for any personal usage.
 
 Here is the list for that:
 - Buy [insurgo](https://insurgo.ca/), or [System 76 Lemur](https://system76.com/laptops/lemur) laptop.
-- If you dont want to buy something like that, you can just gather a laptop that you can disable intel ME. (Lenovo x230 is the best bet) with min 16GB or RAM.
-- Install Qubes OS, if it is a little hard for you, Ubuntu is also great alternative.
+- If you dont want to buy something like that, you can just gather a laptop that you can disable intel ME. (Lenovo x230 is the best bet) with min 16GB or RAM, and do some research to improve security and privacy of that laptop.
+- Install Qubes OS, if it is a little hard for you, Ubuntu is also great alternative. For Qubes check for the recommendad computer.
 - Create couple of Qubes, personal, trade, vault:
 - These can be seen as different operating systems on your computer which cannot connect each other.
 - On trade Qube, you will ony install firefox, and metamask. Mic and Cam will be disconnected, it will have a connection to internet. This can go through VPN + Tor network. Or if you do not want to deal with Catcha stuff, it can be Tor + VPN.
@@ -34,15 +36,15 @@ This is for everyone. it is about general computer use to be safe, and a lot of 
 - Disable bluetooth when you dont use it.
 - Disable Wifi when you dont use it.
 - Use BIOS password.
-- Enable HDD encryption.
-- Do not click on any link you see on the internet, you can never be sure if the other person is compromised.
+- Enable Hard Disk encryption.
+- Do not click on any link you see on the internet, you can never be sure if the other person or computer is compromised.
 - Use 2FA. Preferably hardware one like Yubikey. It is easier to use, faster, more secure. Just do not forget to have a spare one.
 - Using firefox is the best bet, I will share some settings that I use in the [Settings](#setings) part.
-- Use this firefox only for trading, nothing else. So that even when something wrong happens you wont be on your main browser.
+- Use this Firefox only for trading, nothing else. So that even when something wrong happens you wont be on your main browser.
 - Always use hardware wallet. This is of course not the safest, but paper wallets are harder to withdraw. 
 - Only send what you need to your hot wallet, always assume it can always be hacked, so do not have more than you can loose on your hot wallet.
 - Use secure mail providers like [Protonmail](https://protonmail.com/).
-- Your daily and trading browser should be different and do not install any unnecessary extensions.
+- Your daily and trading browser should be different and do not install any unnecessary extensions. 
 - 99% of the hacks happen because of user error, do not forget that.
 - Never ever store your seed phrases backup codes online, or even on your computer. Only write them on paper, and store it accordingly.
 - If you have to write them on the computer, then transfer your funds to new wallet, and ditch the old one.
