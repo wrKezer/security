@@ -1,4 +1,4 @@
-**the Security Audit**
+**the web3 Security Audit**
 
 ##### [Extreme Measure](#extreme-measures) : Separating everything with already hardened laptops. You can DIY your own laptop like that, but needs tons of time and research so if you like these stuff it is always good to know, but not recommended for non tech people. 
 
