@@ -1,8 +1,8 @@
-**the Security Audit**
+**the web3 Security Audit**
 
-##### [Extreme Measure](#extreme-measures) : Separating everything with already hardened laptops. You can DIY your own laptop like that, but needs tons of time and research so if you like these stuff it is always good to know, but not recommended for non tech people. 
+##### [Extreme Measure](#extreme-measures) : Separating everything with already hardened laptops. You can DIY your laptop like that, but it needs tons of time and research, so if you like this stuff, it is always good to know but not recommended for non-tech people. 
 
-##### [General Usage Tips](#general-part) : General usage suggestions which can be applied to all computers and operating systems. BUT I will not suggest using Windows. Linux > MacOS > Windows. If you have to use windows, consider using VM or dual boot for your important needs.
+##### [General Usage Tips](#general-part) : General usage suggestions applied to all computers and operating systems. BUT I will not suggest using Windows. Linux > MacOS > Windows. If you have to use windows, consider using VM or dual boot for your important needs.
 
 ##### [Settings](#setings) : Settings for freshly installed Ubuntu, Macos and firefox.
 
@@ -12,41 +12,41 @@
 ---
 ### Extreme measures
 
-Easiest way to be secure is not to be at any target. 
+The easiest way to be secure is not to be at any target. 
 
-For everyday computer usage, people visit tons of websites, install tons of apps and with every click, we always incease the possibility of being target. If you click on any phising link, or any decoy website, everything is already done, all of these security measures are useless.
+For everyday computer usage, people visit tons of websites and install tons of apps, and with every click, they increase the possibility of being a target. If you click on any phishing link or any decoy website, everything is already done; these security measures are useless.
 
-So the ultimate solution will be a separate computer for trading or banking stuff and not using that computer for any personal usage.
+So the ultimate solution will be a separate computer for trading or banking stuff and not using that computer for personal use.
 
 Here is the list for that:
 - Buy [insurgo](https://insurgo.ca/), or [System 76 Lemur](https://system76.com/laptops/lemur) laptop.
-- If you dont want to buy something like that, you can just gather a laptop that you can disable intel ME. (Lenovo x230 is the best bet) with min 16GB or RAM, and do some research to improve security and privacy of that laptop.
-- Install Qubes OS, if it is a little hard for you, Ubuntu is also great alternative. For Qubes check for the recommendad computer.
-- Create couple of Qubes, personal, trade, vault:
-- These can be seen as different operating systems on your computer which cannot connect each other.
-- On trade Qube, you will ony install firefox, and metamask. Mic and Cam will be disconnected, it will have a connection to internet. This can go through VPN + Tor network. Or if you do not want to deal with Catcha stuff, it can be Tor + VPN.
-- Vault will be an offline Qube, it will not connect to internet in any way. It will have Keepassxc in it, so that you can store your password or keys for any kind. As it is always offline, you will not need to worry.
-- The personal one is for your daily needs, it is better to use internet with it via VPN as well.
+- If you don't want to buy something like that, you can just gather a laptop that you can disable Intel ME. (Lenovo x230 is the best bet) with min 16GB of RAM, and do some research to improve the security and privacy of that laptop.
+- Install Qubes OS; if it is a little hard for you, Ubuntu is also a great alternative. For Qubes, check for the recommended computer.
+- Create a couple of Qubes, personal, trade, vault:
+- These can be seen as different operating systems on your computer which cannot connect.
+- On trade Qube, you will only install firefox, and metamask. Mic and Cam will be disconnected, and it will have a connection to the internet. This can go through VPN + Tor network. Or, if you do not want to deal with Catcha stuff, it can be Tor + VPN.
+- Vault will be an offline Qube; it will not connect to the internet in any way. It will have Keepassxc in it so that you can store your password or keys for any kind. As it is always offline, you will not need to worry.
+- The personal one is for your daily needs; it is better to use the internet with it via VPN as well.
 
 ---
 ### General Part
 
-This is for everyone. it is about general computer use to be safe, and a lot of info can be applied to Metamask usage.
+General is for everyone. It is about general computer use to be safe, and a lot of this info can be applied to Metamask usage.
 
-- Disable bluetooth when you dont use it.
-- Disable Wifi when you dont use it.
+- Disable Bluetooth when you don't use it.
+- Disable Wifi when you don't use it.
 - Use BIOS password.
 - Enable Hard Disk encryption.
-- Do not click on any link you see on the internet, you can never be sure if the other person or computer is compromised.
-- Use 2FA. Preferably hardware one like Yubikey. It is easier to use, faster, more secure. Just do not forget to have a spare one.
-- Using firefox is the best bet, I will share some settings that I use in the [Settings](#setings) part.
-- Use this Firefox only for trading, nothing else. So that even when something wrong happens you wont be on your main browser.
-- Always use hardware wallet. This is of course not the safest, but paper wallets are harder to withdraw. 
-- Only send what you need to your hot wallet, always assume it can always be hacked, so do not have more than you can loose on your hot wallet.
+- Do not click on any link you see on the internet; you can never be sure if the other person or computer is compromised.
+- Use 2FA. Preferably hardware one like Yubikey. It is easier to use, faster, and more secure. Just do not forget to have a spare one.
+- Using firefox is the best bet. I will share some settings in the [Settings](#setings) part.
+- Use this Firefox only for trading, nothing else. So that even when something wrong happens, you won't be on your main browser.
+- Always use a hardware wallet. This is of course, not the safest, but paper wallets are harder to withdraw. 
+- Only send what you need to your hot wallet. Always assume it can always be hacked, so do not have more than you can lose on your hot wallet.
 - Use secure mail providers like [Protonmail](https://protonmail.com/).
-- Your daily and trading browser should be different and do not install any unnecessary extensions. 
+- Your daily and trading browser should be different, and do not install any unnecessary extensions. 
 - 99% of the hacks happen because of user error, do not forget that.
-- Never ever store your seed phrases backup codes online, or even on your computer. Only write them on paper, and store it accordingly.
+- Never store your seed phrases backup codes online or even on your computer. Only write them on paper, and store them accordingly.
 - If you have to write them on the computer, then transfer your funds to new wallet, and ditch the old one.
 
 ---
@@ -159,28 +159,28 @@ network.prefetch-next: FALSE
 
 - **Insurgo laptop with Qubes OS**
 ```
-- Trading: Has only firefox installed with metamask. All important links are already bookmarked. Goes through Tor + VPN (dedicated ip) so that I dont always see captcha errors.
-- Vault: All my licenses, passwords and everything is stored here, no internet connection. Even if this is compromised, there is no problem as I use 2fa for all of the important accounts.
-- Personal: For general usage. It has firefox, signal, Veracrypt. Connects to internet via VPN.
+- Trading: Has only firefox installed with metamask. All important links are already bookmarked. It goes through Tor + VPN (dedicated IP) so that I don't always see captcha errors.
+- Vault: All my licenses, passwords, and everything is stored here, with no internet connection. Even if this is compromised, there is no problem as I use 2fa for all critical accounts.
+- Personal: For general usage. It has firefox, signal, Veracrypt. Connects to the internet via VPN.
 ```
 
-- **M1 Macbook** laptop with Ubuntu install as VM, all trading is inside of that VM
+- **M1 Macbook** laptop with Ubuntu installed as VM, all trading is inside of that VM
 ```
-- Little snitch blocking all icloud and apple services, also checking what is going on. Setup can be a little ticky, but it will worth it
-- If you do not wanna pay, you can use Lulu
+- Little snitch blocking all iCloud and apple services, also checking what is going on. Setup can be a little tricky, but it will be worth it
+- If you do not want to pay, you can use Lulu
 - I do not use icloud, as none of the cloud services can be safer than being offline.
 - Regular backups with Carbon Copy Cloner
-- Klockknock to check what is going on in the computer, it is a open source app to see what is running.
-- I use brew to install almost everything, as I dont have icloud acc, I cannot use app store.
+- Klockknock to check what is going on in the computer; it is an open-source app to see what is running.
+- I use brew to install almost everything; as I don't have iCloud account, I cannot use the app store.
 - FileVault enabled
 ```
 
 - **Protectli pfSense Router**
 ```
-- Whole network goes throuh it
-- ProtonVPN is always one, if it gets disconnected, cannot connect to internet. It connects to closest server, so almost no speed loss.
+- The whole network goes through it
+- ProtonVPN is always one; if it gets disconnected, it cannot connect to the internet. It connects to the closest server, so there is almost no speed loss.
 - Cloudflare DNS is enabled within
-- Using service_watchdog Package to be sure that VPN is always working, if there is a problem, this will restart it.
+- Using the service_watchdog Package to ensure that VPN is always working; if there is a problem, this will restart it.
 ```
 
 - **Browser addons**
@@ -192,12 +192,12 @@ network.prefetch-next: FALSE
 
 - **General Tips**
 ```
-- Using Simplelogin to hide my real email addres.
-- Using signal for communication.
+- Use Simplelogin to hide my real email address.
+- Use signal for communication.
 - Protonmail is the main mail service.
-- Using strongbox app on the phone to see keepassxc database (copying it with cable, not online) and block its connection to internet.
+- Use strongbox app on the phone to see keepassxc database (copying it with cable, not online) and block its internet connection.
 - Authy or ubikey 2fa.
-- Using Firefox Focus as mobile browser
+- Using Firefox Focus as a mobile browser
 ```
 
 ---
