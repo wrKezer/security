@@ -137,19 +137,19 @@ browser.safebrowsing.malware.enabled: FALSE
 dom.battery.enabled: FALSE
 extensions.pocket.enabled: FALSE
 browser.newtabpage.activity-stream.section.highlights.includePocket: FALSE
-browser.newtabpage.activity-stream.feeds. telemetry: FALSE
+browser.newtabpage.activity-stream.feeds.telemetry: FALSE
 browser.ping-centre.telemetry: FALSE
 toolkit.telemetry.server: (Delete URL)
-toolkit. telemetry enabled: FALSE
+toolkit.telemetry.enabled: FALSE
 toolkit.telemetry.unified: FALSE
 devtools.onboarding.telemetry.logged: FALSE
 media.autoplay.default: 5
-dom. webnotifications.enabled: FALSE
+dom.webnotifications.enabled: FALSE
 webgl.disabled: TRUE
 network.http.sendRefererHeader: O
 identity.fxaccounts.enabled: FALSE
 browser.tabs.crashReporting.sendReport: FALSE
-pdfis.enableScripting: FALSE
+pdfjs.enableScripting: FALSE
 network.dns.disablePrefetch: TRUE
 network.dns.disablePrefetchFromHTTPS: TRUE
 network.prefetch-next: FALSE
